@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Altair Objects — a collection of architectural elements and procedural vegetation. Designed and art-directed by Sumanth.">
+  <meta name="theme-color" content="#eeeae2">
+  <title>Altair Objects — Architecture, grown into a world</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#collection">Skip to the collection</a>
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="Altair Objects home">ALTAIR<span>OBJECTS</span></a>
+    <nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#approach">The approach</a><a href="#delivery">Inside the files <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> THE AETHER MONOLITH / COLLECTION 01</div>
+        <h1 id="hero-title">A place.<br>A thousand<br><em>possibilities.</em></h1>
+        <p>Architecture to set a scene. Trees to give it life. Individual pieces from a world on the edge of the sea.</p>
+        <a class="text-link" href="#collection">Explore the collection <span>↓</span></a>
+        <div class="hero-credit">CONCEPT & ART DIRECTION<br><strong>Sumanth / Altair Estates</strong></div>
+      </div>
+      <figure class="hero-image">
+        <img src="images/cedar-gate.webp" alt="The cedar gatehouse, with a tiled roof, timber frame and opening gate leaves, rendered on a neutral ground." width="1440" height="1080" fetchpriority="high">
+        <figcaption><span>01 / THE CEDAR GATE</span><span>BLENDER · PROCEDURAL MATERIALS</span></figcaption>
+        <div class="image-tag">Built to be<br><em>part of your world.</em></div>
+      </figure>
+    </section>
+    <div class="ribbon"><span>ARCHITECTURAL ELEMENTS</span><span>PROCEDURAL BOTANICALS</span><span>EDITABLE BLENDER FILES</span><span>INDEPENDENT PRODUCTS</span></div>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="section-head"><div><p class="eyebrow">THE OBJECT LIBRARY</p><h2 id="collection-title">Start with a detail.</h2></div><p>Choose a structure. Plant a grove.<br>Make the scene your own.</p></div>
+      <div class="tools">
+        <div class="filters" role="group" aria-label="Filter collection">
+          <button type="button" class="active" data-filter="all" aria-pressed="true">All objects</button>
+          <button type="button" data-filter="architecture" aria-pressed="false">Architecture</button>
+          <button type="button" data-filter="vegetation" aria-pressed="false">Vegetation</button>
+          <button type="button" data-filter="worlds" aria-pressed="false">Worlds</button>
+        </div>
+        <label class="search"><span class="sr-only">Search products</span><input type="search" id="search" placeholder="Find a piece…" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+      </div>
+      <div class="availability"><span class="dot"></span><p>Collection preview. Prices are proposed launch prices in USD. Purchasing opens after release review.</p><span id="count" role="status" aria-live="polite"></span></div>
+      <div id="products" class="products" aria-live="polite"></div>
+      <noscript><p>This collection needs JavaScript to display its product details. See the <a href="products.json">product index</a>.</p></noscript>
+    </section>
+    <section id="approach" class="approach" aria-labelledby="approach-title">
+      <div><p class="eyebrow">FROM A PLACE TO A PIECE</p><h2 id="approach-title">Designed as a world.<br><em>Made to travel.</em></h2></div>
+      <div class="approach-copy"><p>The collection begins with Altair Estates: a coastal architectural world, planned and art-directed by Sumanth. Its forms are developed into independent objects with their own materials, controls and presentation scenes.</p><p>The product edition uses project-authored procedural geometry and materials. Its previews show the included objects, rendered directly in Blender. Downloaded vehicles, scanned props and portfolio-only artwork are excluded.</p><a class="text-link" href="#delivery">What comes with a piece <span>↗</span></a></div>
+    </section>
+    <section id="delivery" class="delivery" aria-labelledby="delivery-title">
+      <p class="eyebrow">BEYOND THE PICTURE</p><h2 id="delivery-title">Know what you’re opening.</h2>
+      <div class="delivery-grid">
+        <article><span>01</span><h3>A native starting point</h3><p>Editable Blender 4.5 LTS scenes, metric scale, named collections and procedural materials. Product geometry is separated from the included presentation setup.</p></article>
+        <article><span>02</span><h3>Controls with a purpose</h3><p>Opening gates, adjustable architectural light and tree sway where specified. Each package explains its controls and includes an example timeline.</p></article>
+        <article><span>03</span><h3>Clear boundaries</h3><p>Contents, geometry counts and limitations are listed per product. Unreal support, game performance and physical simulation are not claimed for these Blender editions.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#">ALTAIR<span>OBJECTS</span></a><p>Design & art direction by Sumanth.<br>The Aether Monolith · Collection preview</p><a href="https://github.com/Su3Doesign/Altair-Estates-The-Aether-Monolith" target="_blank" rel="noopener noreferrer">Project notes ↗</a></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><button type="button" class="close" aria-label="Close product details">×</button><div id="detail-content"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Public repository: catalogue, previews and documentation only.
+production/
+releases/
+private/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+*.blend
+*.blend1
+*.fbx
+*.usdc
+*.usda
+*.usd
+*.obj
+*.glb
+*.zip
+*.7z
+*.pem
+*.key
+*.wallet
+.DS_Store
