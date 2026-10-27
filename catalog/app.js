@@ -25,6 +25,7 @@ dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 dialog.addEventListener('close',()=>{document.body.style.overflow='';if(lastFocus?.isConnected)lastFocus.focus();});
 try{
- const response=await fetch('products.json');if(!response.ok)throw new Error('Product index unavailable');
- products=await response.json();render();
+ const catalogURL=new URL('./products.json',import.meta.url);
+ const response=await fetch(catalogURL);if(!response.ok)throw new Error('Product index unavailable');
+ products=(await response.json()).map(p=>({...p,image:p.image?new URL(p.image,catalogURL).href:null}));render();
 }catch(error){container.innerHTML='<p class="status-error">The collection could not load. Please refresh the page.</p>';count.textContent='';}

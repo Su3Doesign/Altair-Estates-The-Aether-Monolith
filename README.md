@@ -7,10 +7,14 @@ This repository contains the website, product descriptions, freshly rendered pre
 ## Run the catalogue
 
 ```sh
-python3 -m http.server 5174 --bind 127.0.0.1 --directory catalog
+python3 -m http.server 5174 --bind 127.0.0.1
 ```
 
-The static site has no package-manager dependencies, remote fonts, analytics, wallet connection or payment integration. Deploy the contents of `catalog/` to a static host when the seller is ready. There is no automatic deployment workflow.
+Open the repository root in the local server. The HTML entry point is `index.html`; styles, scripts, product data and images stay in `catalog/`. The existing `catalog/index.html` also works.
+
+For GitHub Pages, open **Settings → Pages**, select **Deploy from a branch**, and choose **main → / (root)**, then save. The root `.nojekyll` file lets Pages serve the static files directly. Relative asset paths support GitHub's repository subdirectory URL.
+
+The static site has no package-manager dependencies, remote fonts, analytics, wallet connection or payment integration. For another static host, publish `index.html` and `catalog/`. There is no custom deployment workflow.
 
 ```sh
 python3 scripts/check_catalog.py

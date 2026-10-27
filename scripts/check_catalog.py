@@ -18,9 +18,10 @@ for p in products:
         assert path.is_relative_to(CAT.resolve()) and path.is_file()
         assert path.suffix=='.webp' and p['alt']
     assert 'purchas' in p['availability'].lower() or 'not offered' in p['availability'].lower()
-html=(CAT/'index.html').read_text()
-for p in re.findall(r'(?:src|href)="([^"#]+)"',html):
-    if not p.startswith(('http:','https:','mailto:')):assert (CAT/p).exists(),p
+for entry in (ROOT/'index.html',CAT/'index.html'):
+    html=entry.read_text()
+    for p in re.findall(r'(?:src|href)="([^"#]+)"',html):
+        if not p.startswith(('http:','https:','mailto:')):assert (entry.parent/p).exists(),p
 tracked=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
 for p in tracked:
     if not p:continue
