@@ -1,26 +1,18 @@
-# Public repository: catalogue, previews and documentation only.
-production/
-releases/
-private/
+# The public website: the built page, its images and its light web models. Production files never go here.
 node_modules/
-dist/
-__pycache__/
-*.pyc
-.venv/
-.env
-.env.*
-!.env.example
 *.blend
 *.blend1
 *.fbx
-*.usdc
-*.usda
-*.usd
 *.obj
+*.usd
+*.usda
+*.usdc
 *.glb
+!world/*.glb
 *.zip
 *.7z
 *.pem
 *.key
-*.wallet
+.env
+.env.*
 .DS_Store
