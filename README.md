@@ -1,40 +1,37 @@
-# Altair Objects
+# Altair Estates: The Aether Monolith
 
-The public catalogue for an independent collection of architectural elements and procedural vegetation from **Altair Estates: The Aether Monolith**. Concept, design and art direction by Sumanth.
+A collector's estate on a cliff above the sea, and the house at its end. Concept, design and art direction by
+**Sumanth**. More work at **[thesumanth.com](https://thesumanth.com)**.
 
-This repository contains the website, product descriptions, freshly rendered previews and release documentation. Editable assets and the production source are **not published here**. A public catalogue does not grant a licence to redistribute its images or obtain the commercial asset files.
+This repository is the estate's public website: a drive from the gate to the sea, drawn as it goes, with the
+renders, the drawings and the making of. Open `index.html` through any static server, or see it on GitHub Pages.
 
-## Run the catalogue
+## What is here
 
-```sh
-python3 -m http.server 5174 --bind 127.0.0.1
-```
+- `index.html` and `assets/`: the website.
+- `img/`: renders, drawings and studies at web sizes.
+- `world/`: the estate's light web models for the live drawing (reduced, without materials).
+- `draco/`: the mesh decoder.
 
-Open the repository root in the local server. The HTML entry point is `index.html`; styles, scripts, product data and images stay in `catalog/`. The existing `catalog/index.html` also works.
+The editable scenes, the source and the production files are not published here.
 
-For GitHub Pages, open **Settings → Pages**, select **Deploy from a branch**, and choose **main → / (root)**, then save. The root `.nojekyll` file lets Pages serve the static files directly. Relative asset paths support GitHub's repository subdirectory URL.
+## Credits
 
-The static site has no package-manager dependencies, remote fonts, analytics, wallet connection or payment integration. For another static host, publish `index.html` and `catalog/`. There is no custom deployment workflow.
+- **Concept, design and art direction:** Sumanth.
+- **Cars:** the cars in the collection and in "Lights on" are other modellers' work, shown for the story. They are
+  not part of any Altair product.
+  - Bugatti Chiron: model by Bob Kimani (Kimz Auto).
+  - Ferrari 458 Italia: model by vicent091036 (CC BY 4.0).
+  - Car concept: Darmstadt Graphics Group, Khronos sample (CC BY 4.0).
+  - The others: downloaded models by their authors.
+- **Car designs, names, badges and liveries** belong to their makers and partners. They appear for illustration in a
+  portfolio, and no endorsement is implied.
+- **In the renders:** some materials and potted plants are scanned textures and models from Poly Haven (CC0). The
+  painting in the master suite is J. M. W. Turner's *The Shipwreck of the Minotaur*, c. 1805–10 (public domain).
+- **Type:** Mona Sans, Geist Mono and Caveat on the site, IBM Plex on the drawings (SIL Open Font License).
+- **Code:** three.js (MIT), GSAP (its standard no-charge licence), Lenis (MIT), the Draco decoder (Apache 2.0).
 
-```sh
-python3 scripts/check_catalog.py
-```
+## Rights
 
-## Product status
-
-The first Blender-native collection contains a cedar gatehouse, glass-block pavilion, modular courtyard arch, and six tree species with three variations per species. Gate leaves, practical lights, pavilion glow and tree sway have product-specific controls. Exact package status is recorded in `catalog/products.json`.
-
-The mansion and full estate are a separate engineering-preview track. They use the original procedural material edition, omit external props and vehicles, and need a full visual and performance review before commercial release. They are not advertised as a finished Unreal project.
-
-“Package verified” means the file reopened in Blender and passed dependency and specified control checks. It does **not** mean legal clearance, marketplace approval, Unreal compatibility, game performance certification or that purchasing is open. Listed prices are proposed USD launch prices.
-
-## Working on this project
-
-- Use the existing isolated checkout; do not create a worktree unless requested.
-- Car Mansion is the reference source. Work and publication for this collection belong in Altair Estates.
-- Keep `production/`, `releases/` and `private/` out of Git and out of the public deployment.
-- Private release archives, source provenance, checksums and verification reports are retained in the cloud workspace. A clone of this public repository does not restore them. Back them up privately before disposing of the workspace.
-- Do not copy portfolio car renders, third-party models, scans, logos or reference artwork into this catalogue.
-- Publish truthful compatibility, included-content and disclosure information; do not describe a preview as a completed sale product.
-
-See [validation results](docs/VALIDATION.md), [release scope](docs/RELEASE-SCOPE.md), [distribution strategy](docs/DISTRIBUTION.md), [finishing brief](docs/FINISHING-BRIEF.md), [Unreal handoff](docs/UNREAL-HANDOFF.md), and the [optional NFT design](docs/NFT-PLAN.md).
+© 2026 Sumanth. The estate is a concept. The images and models here may not be reused or redistributed without
+permission.
