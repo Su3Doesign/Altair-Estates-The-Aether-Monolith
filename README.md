@@ -26,7 +26,8 @@ The editable scenes, the source and the production files are not published here.
   - The others: downloaded models by their authors.
 - **Car designs, names, badges and liveries** belong to their makers and partners. They appear for illustration in a
   portfolio, and no endorsement is implied.
-- **In the renders:** some materials and potted plants are scanned textures and models from Poly Haven (CC0). The
+- **In the renders:** the sea cliffs and the rooms' raw rock are photogrammetry scans of real cliffs and rock faces,
+  and some materials and potted plants are scanned textures and models, all from Poly Haven (CC0). The
   painting in the master suite is J. M. W. Turner's *The Shipwreck of the Minotaur*, c. 1805–10 (public domain).
 - **Type:** Mona Sans, Geist Mono and Caveat on the site, IBM Plex on the drawings (SIL Open Font License).
 - **Code:** three.js (MIT), GSAP (its standard no-charge licence), Lenis (MIT), the Draco decoder (Apache 2.0).
