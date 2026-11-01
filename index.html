@@ -7,8 +7,8 @@
     <meta name="description" content="Altair Estates: The Aether Monolith. A collector's estate on a cliff above the sea, designed, built and rendered by Sumanth. Take the drive from the gate to the sea." />
     <title>Altair Estates</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e9eef1'/%3E%3Crect x='13' y='4' width='6' height='24' fill='%23111416'/%3E%3C/svg%3E" />
-    <script type="module" crossorigin src="./assets/index-B3adTkJb.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-UkTe3CCS.css">
+    <script type="module" crossorigin src="./assets/index-CmQVmV6Q.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D69_wUGs.css">
   </head>
   <body class="is-loading">
     <canvas id="gl" aria-hidden="true"></canvas>
@@ -47,10 +47,7 @@
   <p class="hud__meta"><span data-hud-mood></span><span data-hud-bearing></span></p>
 </div>
 
-<div class="frames" aria-hidden="true">
-  <figure class="frame" data-frame="0"><img class="frame__bg" alt=""><img class="frame__img" alt=""></figure>
-  <figure class="frame" data-frame="1"><img class="frame__bg" alt=""><img class="frame__img" alt=""></figure>
-</div>
+<canvas class="frames" id="frames" aria-hidden="true"></canvas>
 <svg class="n3d" aria-hidden="true" data-n3d></svg>
 
 <nav class="acts" aria-label="Acts">
@@ -255,7 +252,7 @@
       <p class="cap__m"><span>+30.00 m</span><span>Night</span></p>
       <button class="cap__open" type="button" data-open="C12" aria-label="Open The boxes full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C12.webp" srcset="img/t/C12.webp 640w, img/r/C12.webp 1920w" sizes="100vw" width="1920" height="1080" alt="The boxes" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C12.webp" srcset="img/t/C12.webp 640w, img/r/C12.webp 2560w" sizes="100vw" width="2560" height="1440" alt="The boxes" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--act" id="act-water" data-station="act-water" data-kind="act" data-mood="blue" data-act="2">
     <div class="act">
@@ -595,7 +592,7 @@
       <p class="cap__m"><span>+9.10 m</span><span>Golden hour</span></p>
       <button class="cap__open" type="button" data-open="C30" aria-label="Open The way down full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 1920w" sizes="100vw" width="1920" height="1080" alt="The way down" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 2560w" sizes="100vw" width="2560" height="1440" alt="The way down" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--stop" id="C31" data-station="C31" data-kind="fly" data-mood="golden" data-act="6" data-level="1.1" data-name="On the sand">
     <div class="cap" data-cap>
@@ -605,7 +602,7 @@
       <p class="cap__m"><span>+1.10 m</span><span>Golden hour</span></p>
       <button class="cap__open" type="button" data-open="C31" aria-label="Open On the sand full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C31.webp" srcset="img/t/C31.webp 640w, img/r/C31.webp 1920w" sizes="100vw" width="1920" height="1080" alt="On the sand" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C31.webp" srcset="img/t/C31.webp 640w, img/r/C31.webp 2560w" sizes="100vw" width="2560" height="1440" alt="On the sand" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--stop" id="C19" data-station="C19" data-kind="fly" data-mood="blue" data-act="6" data-level="3.5" data-name="The sea garage">
     <div class="cap" data-cap>
@@ -615,7 +612,7 @@
       <p class="cap__m"><span>+3.50 m</span><span>Blue hour</span></p>
       <button class="cap__open" type="button" data-open="C19" aria-label="Open The sea garage full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C19.webp" srcset="img/t/C19.webp 640w, img/r/C19.webp 2160w" sizes="100vw" width="2160" height="3840" alt="The sea garage" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C19.webp" srcset="img/t/C19.webp 640w, img/r/C19.webp 2880w" sizes="100vw" width="2880" height="5120" alt="The sea garage" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--stop" id="C20" data-station="C20" data-kind="fly" data-mood="blue" data-act="6" data-level="0" data-name="From the sea">
     <div class="cap" data-cap>
@@ -625,7 +622,7 @@
       <p class="cap__m"><span>+0.00 m</span><span>Blue hour</span></p>
       <button class="cap__open" type="button" data-open="C20" aria-label="Open From the sea full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 1920w" sizes="100vw" width="1920" height="1080" alt="From the sea" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 2560w" sizes="100vw" width="2560" height="1440" alt="From the sea" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--stop" id="C25" data-station="C25" data-kind="fly" data-mood="golden" data-act="6" data-level="21.2" data-name="From the bay">
     <div class="cap" data-cap>
@@ -635,7 +632,7 @@
       <p class="cap__m"><span>+21.20 m</span><span>Golden hour</span></p>
       <button class="cap__open" type="button" data-open="C25" aria-label="Open From the bay full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C25.webp" srcset="img/t/C25.webp 640w, img/r/C25.webp 1920w" sizes="100vw" width="1920" height="1080" alt="From the bay" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C25.webp" srcset="img/t/C25.webp 640w, img/r/C25.webp 2560w" sizes="100vw" width="2560" height="1440" alt="From the bay" loading="lazy" decoding="async"></noscript>
   </section>
   <section class="ch ch--stop" id="C21" data-station="C21" data-kind="fly" data-mood="dusk" data-act="6" data-level="30.8" data-name="The whole estate">
     <div class="cap" data-cap>
@@ -645,7 +642,7 @@
       <p class="cap__m"><span>+30.80 m</span><span>Dusk</span></p>
       <button class="cap__open" type="button" data-open="C21" aria-label="Open The whole estate full size"><span>View the frame</span><i aria-hidden="true"></i></button>
     </div>
-    <noscript><img class="" src="img/r/C21.webp" srcset="img/t/C21.webp 640w, img/r/C21.webp 1920w" sizes="100vw" width="1920" height="1080" alt="The whole estate" loading="lazy" decoding="async"></noscript>
+    <noscript><img class="" src="img/r/C21.webp" srcset="img/t/C21.webp 640w, img/r/C21.webp 2560w" sizes="100vw" width="2560" height="1440" alt="The whole estate" loading="lazy" decoding="async"></noscript>
   </section>
   
   <section class="cars" id="cars" data-station="cars" data-kind="page" data-mood="night" data-cover style="--n:8">
@@ -797,7 +794,7 @@
       <h3 class="chap__t" data-split>Again, and again</h3><p class="chap__s">Each room, version by version</p></header>
       <p class="sub">Every render was read at full size and written on. These are the notes.</p>
       <figure class="wall" data-wall><img src="img/doc/wall.webp" width="2016" height="840" alt="Every frame on file" loading="lazy" decoding="async">
-        <figcaption><b>231</b> frames on file, 9 Oct to 29 Oct, oldest first</figcaption></figure>
+        <figcaption><b>224</b> frames on file, 9 Oct to 29 Oct, oldest first</figcaption></figure>
     </div>
 
     <div class="flip" data-flip style="--n:10">
@@ -1356,7 +1353,7 @@
           <figure><img class="" src="img/r/H08.webp" srcset="img/t/H08.webp 640w, img/r/H08.webp 2048w" sizes="30vw" width="2048" height="2560" alt="The master suite" loading="lazy" decoding="async"></figure>
           <p class="day__d">15 Oct <span>06:16</span></p>
           <h4>The master suite</h4><p>“WOW.”</p></article><article class="day">
-          <figure><img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 1920w" sizes="30vw" width="1920" height="1080" alt="Cliffs, gardens, the far shore" loading="lazy" decoding="async"></figure>
+          <figure><img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 2560w" sizes="30vw" width="2560" height="1440" alt="Cliffs, gardens, the far shore" loading="lazy" decoding="async"></figure>
           <p class="day__d">15 Oct <span>18:08</span></p>
           <h4>Cliffs, gardens, the far shore</h4><p>The sea cliffs rebuilt along the whole shore, headlands across the bay.</p></article><article class="day">
           <figure><img class="" src="img/r/X2.webp" srcset="img/t/X2.webp 640w, img/r/X2.webp 2560w" sizes="30vw" width="2560" height="1440" alt="The first package" loading="lazy" decoding="async"></figure>
@@ -1377,7 +1374,7 @@
           <figure><img class="" src="img/r/X9.webp" srcset="img/t/X9.webp 640w, img/r/X9.webp 2560w" sizes="30vw" width="2560" height="1440" alt="The car meet" loading="lazy" decoding="async"></figure>
           <p class="day__d">16 Oct <span>14:36</span></p>
           <h4>The car meet</h4><p>Cars in a fan, grills, ice tubs, festoons.</p></article><article class="day">
-          <figure><img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 1920w" sizes="30vw" width="1920" height="1080" alt="A private beach" loading="lazy" decoding="async"></figure>
+          <figure><img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 2560w" sizes="30vw" width="2560" height="1440" alt="A private beach" loading="lazy" decoding="async"></figure>
           <p class="day__d">16 Oct</p>
           <h4>A private beach</h4><p>Sand on the low shore, a stair down the bank, a turquoise cove.</p></article>
       </div>
@@ -1498,7 +1495,7 @@
         <img class="" src="img/r/C09.webp" srcset="img/t/C09.webp 640w, img/r/C09.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The Chiron" loading="lazy" decoding="async"><span>C09</span></button><button type="button" class="plate" data-open="C10" style="--a:1.778">
         <img class="" src="img/r/C10.webp" srcset="img/t/C10.webp 640w, img/r/C10.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="From behind" loading="lazy" decoding="async"><span>C10</span></button><button type="button" class="plate" data-open="C11" style="--a:1.778">
         <img class="" src="img/r/C11.webp" srcset="img/t/C11.webp 640w, img/r/C11.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The F1" loading="lazy" decoding="async"><span>C11</span></button><button type="button" class="plate" data-open="C12" style="--a:1.778">
-        <img class="" src="img/r/C12.webp" srcset="img/t/C12.webp 640w, img/r/C12.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="The boxes" loading="lazy" decoding="async"><span>C12</span></button>
+        <img class="" src="img/r/C12.webp" srcset="img/t/C12.webp 640w, img/r/C12.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The boxes" loading="lazy" decoding="async"><span>C12</span></button>
     </div></div><div class="plates__group"><h3>The Water</h3><div class="plates__row">
       <button type="button" class="plate" data-open="C13" style="--a:1.778">
         <img class="" src="img/r/C13.webp" srcset="img/t/C13.webp 640w, img/r/C13.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The palm canal" loading="lazy" decoding="async"><span>C13</span></button><button type="button" class="plate" data-open="C14" style="--a:1.778">
@@ -1538,12 +1535,12 @@
         <img class="" src="img/r/C18.webp" srcset="img/t/C18.webp 640w, img/r/C18.webp 2047w" sizes="(min-width: 900px) 25vw, 50vw" width="2047" height="2560" alt="The Vault" loading="lazy" decoding="async"><span>C18</span></button>
     </div></div><div class="plates__group"><h3>The Shore</h3><div class="plates__row">
       <button type="button" class="plate" data-open="C30" style="--a:1.778">
-        <img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="The way down" loading="lazy" decoding="async"><span>C30</span></button><button type="button" class="plate" data-open="C31" style="--a:1.778">
-        <img class="" src="img/r/C31.webp" srcset="img/t/C31.webp 640w, img/r/C31.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="On the sand" loading="lazy" decoding="async"><span>C31</span></button><button type="button" class="plate" data-open="C19" style="--a:0.563">
-        <img class="" src="img/r/C19.webp" srcset="img/t/C19.webp 640w, img/r/C19.webp 2160w" sizes="(min-width: 900px) 25vw, 50vw" width="2160" height="3840" alt="The sea garage" loading="lazy" decoding="async"><span>C19</span></button><button type="button" class="plate" data-open="C20" style="--a:1.778">
-        <img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="From the sea" loading="lazy" decoding="async"><span>C20</span></button><button type="button" class="plate" data-open="C25" style="--a:1.778">
-        <img class="" src="img/r/C25.webp" srcset="img/t/C25.webp 640w, img/r/C25.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="From the bay" loading="lazy" decoding="async"><span>C25</span></button><button type="button" class="plate" data-open="C21" style="--a:1.778">
-        <img class="" src="img/r/C21.webp" srcset="img/t/C21.webp 640w, img/r/C21.webp 1920w" sizes="(min-width: 900px) 25vw, 50vw" width="1920" height="1080" alt="The whole estate" loading="lazy" decoding="async"><span>C21</span></button>
+        <img class="" src="img/r/C30.webp" srcset="img/t/C30.webp 640w, img/r/C30.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The way down" loading="lazy" decoding="async"><span>C30</span></button><button type="button" class="plate" data-open="C31" style="--a:1.778">
+        <img class="" src="img/r/C31.webp" srcset="img/t/C31.webp 640w, img/r/C31.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="On the sand" loading="lazy" decoding="async"><span>C31</span></button><button type="button" class="plate" data-open="C19" style="--a:0.563">
+        <img class="" src="img/r/C19.webp" srcset="img/t/C19.webp 640w, img/r/C19.webp 2880w" sizes="(min-width: 900px) 25vw, 50vw" width="2880" height="5120" alt="The sea garage" loading="lazy" decoding="async"><span>C19</span></button><button type="button" class="plate" data-open="C20" style="--a:1.778">
+        <img class="" src="img/r/C20.webp" srcset="img/t/C20.webp 640w, img/r/C20.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="From the sea" loading="lazy" decoding="async"><span>C20</span></button><button type="button" class="plate" data-open="C25" style="--a:1.778">
+        <img class="" src="img/r/C25.webp" srcset="img/t/C25.webp 640w, img/r/C25.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="From the bay" loading="lazy" decoding="async"><span>C25</span></button><button type="button" class="plate" data-open="C21" style="--a:1.778">
+        <img class="" src="img/r/C21.webp" srcset="img/t/C21.webp 640w, img/r/C21.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1440" alt="The whole estate" loading="lazy" decoding="async"><span>C21</span></button>
     </div></div><div class="plates__group"><h3>Studies</h3><div class="plates__row">
       <button type="button" class="plate" data-open="kit_corners" style="--a:2.368">
         <img class="" src="img/r/kit_corners.webp" srcset="img/t/kit_corners.webp 640w, img/r/kit_corners.webp 2560w" sizes="(min-width: 900px) 25vw, 50vw" width="2560" height="1081" alt="kit_corners" loading="lazy" decoding="async"><span>kit_corners</span></button><button type="button" class="plate" data-open="kit_wheel_y5" style="--a:1.333">
